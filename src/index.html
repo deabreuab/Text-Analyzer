@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Analizador de texto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Analizador de Texto</h1>
+      </header>
+      <section>
+        <textarea name="user-input" cols="30" rows="10" placeholder="Tu texto aquí"></textarea>
+        <button id="reset-button">LIMPIAR</button>
+      </section>
+      <footer>
+        <p>Barbara De Abreu</p>
+        <img src="images/plantita.svg" alt="plantita">
+      </footer>
+    </main>
+    <aside>
+      <ul>
+        <li class="lista" data-testid="word-count">Cantidad de palabras: 0</li>
+        <li class="lista" data-testid="character-count">Cantidad de caracteres: 0</li>
+        <li class="lista" data-testid="character-no-spaces-count">Cantidad de caracteres sin espacios: 0</li>
+        <li class="lista" data-testid="number-count">Cantidad de números: 0</li>
+        <li class="lista" data-testid="number-sum">Suma total de los números: 0</li>
+        <li class="lista" data-testid="word-length-average">Promedio de longitud de palabras: 0</li>
+      </ul>
+    </aside>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
