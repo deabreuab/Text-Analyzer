@@ -1,11 +1,9 @@
 import analyzer from "./analyzer.js";
-console.log(analyzer.getAverageWordLength("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."))
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
 const userInput = document.querySelector('textarea[name="user-input"]');
 const resetButton = document.getElementById("reset-button");
-console.log(resetButton);
 
 userInput.addEventListener("input", function () {
   const cantidadDePalabras = analyzer.getWordCount(userInput.value)
